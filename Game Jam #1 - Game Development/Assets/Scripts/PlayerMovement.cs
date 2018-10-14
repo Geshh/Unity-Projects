@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Rigidbody2D rb;
-    private float speed = 5f;
+    private float speed = 50f;
     private float jumpForce = 10f;
     private float moveInput;
     // Use this for initialization
