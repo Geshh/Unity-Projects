@@ -6,6 +6,7 @@ public class Patrol : MonoBehaviour
 {
 
     public float speed;
+    private float speedTemp;
     public float distance;
 
     private bool movingRight = true;
@@ -14,6 +15,10 @@ public class Patrol : MonoBehaviour
 
     private float timeBtwRotation = 1f;
 
+    void Start()
+    {
+        speedTemp = speed;
+    }
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -37,8 +42,8 @@ public class Patrol : MonoBehaviour
                     transform.eulerAngles = new Vector3(0, 0, 0);
                     movingRight = true;
                 }
+                speed = speedTemp;
                 timeBtwRotation = 1f;
-                speed = 1f;
             }
         }
     }
