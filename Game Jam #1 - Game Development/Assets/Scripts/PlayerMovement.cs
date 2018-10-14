@@ -6,8 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Rigidbody2D rb;
-    private float speed = 50f;
-    private float jumpForce = 10f;
+    public float speed;
+    public float jumpForce;
     private float moveInput;
     // Use this for initialization
     private bool isGrounded;
@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
 
     private float jumpTimeCounter;
-    private float jumpTime = 0.25f;
+    public float jumpTime;
     private bool isJumping;
     void Start()
     {
