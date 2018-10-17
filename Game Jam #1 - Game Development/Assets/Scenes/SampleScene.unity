@@ -132,11 +132,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 165.6
+      value: 85.3
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 93.7
+      value: 104.9
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalPosition.z
@@ -160,6 +160,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -250,7 +258,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 100
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -328,11 +336,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4732245394991036, guid: 500b0ec1fa6ffe241a01ee949695f72e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 71.8
+      value: 77.4
       objectReference: {fileID: 0}
     - target: {fileID: 4732245394991036, guid: 500b0ec1fa6ffe241a01ee949695f72e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.1
+      value: 108.5
       objectReference: {fileID: 0}
     - target: {fileID: 4732245394991036, guid: 500b0ec1fa6ffe241a01ee949695f72e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -360,7 +368,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4732245394991036, guid: 500b0ec1fa6ffe241a01ee949695f72e, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732245394991036, guid: 500b0ec1fa6ffe241a01ee949695f72e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 500b0ec1fa6ffe241a01ee949695f72e, type: 2}
@@ -487,11 +499,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.3
+      value: 84.3
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -43.7
+      value: 103.2
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalPosition.z
@@ -523,11 +535,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4944237111299532, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91629f4b60955cf44ad0c9d013600541, type: 2}
