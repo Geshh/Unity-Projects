@@ -373,9 +373,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1173369406}
+  - component: {fileID: 1173369407}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,13 +388,33 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1173369405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.98, y: 106.33, z: 0}
+  m_LocalPosition: {x: 84.13, y: 107.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1643430101}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1173369407
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1173369405}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 100
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 10
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1376503051
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,7 +475,7 @@ MonoBehaviour:
       defaultLocalRotation: {x: 0, y: 0, z: 0.75564015, w: 0.654987}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: 87.36784, y: 105.746056, z: 0}
+    targetPosition: {x: 84.51784, y: 106.526054, z: 0}
     iterations: 10
     damping: 0.8
 --- !u!1001 &1473784329
@@ -1159,7 +1180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1831575777089210, guid: 1ca3187795e153b40b081562a20e53ec, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4074252789910976, guid: 1ca3187795e153b40b081562a20e53ec, type: 2}
       propertyPath: m_LocalScale.z
@@ -1226,26 +1247,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0233135, y: 1.6959043}
   m_EdgeRadius: 0
---- !u!50 &1730255624
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1730255622}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 100
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 10
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &1730255625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,8 +1258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963bd92f5a62e384890893c2b66f2362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
-  jumpForce: 50
+  parentGameObject: {fileID: 1173369405}
+  speed: 5
+  jumpForce: 5
   feetPos: {fileID: 1633356739}
   whatIsGround:
     serializedVersion: 2
@@ -1375,6 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 963bd92f5a62e384890893c2b66f2362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentGameObject: {fileID: 0}
   speed: 100
   jumpForce: 100
   feetPos: {fileID: 1868897170}
@@ -1497,6 +1500,6 @@ MonoBehaviour:
       defaultLocalRotation: {x: -0, y: -0, z: -0.8434673, w: -0.5371805}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: 87.098854, y: 105.75529, z: 0}
+    targetPosition: {x: 84.24885, y: 106.535286, z: 0}
     iterations: 10
     damping: 0.8

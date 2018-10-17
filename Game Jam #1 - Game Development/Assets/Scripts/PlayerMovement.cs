@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
-    private Rigidbody2D rb;
+    public GameObject parentGameObject;
     public float speed;
     public float jumpForce;
     private float moveInput;
@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator anim;
     public bool m_FacingRight = true;
+    private Rigidbody2D rb;
 
     public void Flip()
     {
@@ -29,12 +30,12 @@ public class PlayerMovement : MonoBehaviour
         // Multiply the player's x local scale by -1.
         Vector3 theScale = GameObject.FindGameObjectWithTag("Player").transform.localScale;
         theScale.x *= -1;
-        transform.localScale = theScale;
+        GameObject.FindGameObjectWithTag("Player").transform.localScale = theScale;
     }
     void Start()
     {
         anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        rb = parentGameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
