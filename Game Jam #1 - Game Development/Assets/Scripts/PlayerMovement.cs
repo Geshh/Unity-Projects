@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", false);
+            rb.velocity = new Vector2(moveInput * 0, rb.velocity.y);
         }
 
     }
@@ -72,6 +73,15 @@ public class PlayerMovement : MonoBehaviour
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
+        }
+
+        if (isGrounded == true && Input.GetKeyDown(KeyCode.S))
+        {
+            anim.SetBool("isCrouching", true);
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            anim.SetBool("isCrouching", false);
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping == true)
