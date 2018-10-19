@@ -20,7 +20,6 @@ public class FieldOfViewEditor : Editor
         Handles.color = Color.green;
         foreach (Transform visibleTarget in fow.visibleTargets)
         {
-            Debug.Log("trying to draw");
             Handles.DrawLine(fow.transform.position, visibleTarget.position);
         }
     }
