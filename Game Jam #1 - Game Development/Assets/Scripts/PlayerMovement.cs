@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             anim.SetBool("isWalking", false);
-            rb.velocity = new Vector2(moveInput * 0, rb.velocity.y);
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
     }
